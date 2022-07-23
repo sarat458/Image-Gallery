@@ -7,8 +7,6 @@ import { GITHUB_URL } from "../config";
 import "./Gallery.css";
 import { useEffect, useState } from "react";
 
-
-
 export const Gallery = () => {
   const imagesLength = 3;
   const [index, setIndex] = useState(1);
@@ -33,6 +31,7 @@ export const Gallery = () => {
   const zoomLevel = 1.5;
 
   const updateWidth= ()=>{
+    console.log(imagesLength)
     setWidth(window.innerWidth)
     if(width>992){
       setType(2)
